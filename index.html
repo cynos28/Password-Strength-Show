@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-
+<body>
 <div class="container">
     <h1>Show <span>Password Strength</span> </h1>
     <input class="input" id="password" name="text" placeholder="Password..." type="text" oninput="checkPasswordStrength()" >
@@ -35,13 +35,13 @@
             return;
         }
 
-        // Check for uppercase letters
+        // uppercase letters
         if (/[A-Z]/.test(password)) {
-            // Check for lowercase letters
+            // lowercase letters
             if (/[a-z]/.test(password)) {
-                // Check for numbers
+                //numbers
                 if (/\d/.test(password)) {
-                    // Check for special characters
+                    // special characters
                     if (/[^A-Za-z0-9]/.test(password)) {
                         strengthText.innerText = "Strong password!";
                     } else {
@@ -59,7 +59,12 @@
     }
 </script>
 
-<body>
+    <!---- Created by watermark  --->
+        <div class="createdBy">
+             Created by <a style="text-decoration: none "  href ="cynos28.com"> &nbsp; Cynos28 </a>
+        </div>  
+
+
     
 </body>
 </html>
