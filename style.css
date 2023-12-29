@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body {
+    background-color: #092635;
+    color: rgb(254, 254, 254);
+}
+
+.container {
+    margin: 15%;
+    width: 100%;
+    max-width: fit-content;
+}
+
+.container .displaytext span {
+    color: #65B741;
+}
+
+.container h1 span {
+    color: #DF826C;
+}
+
+.container .displaytext p{
+
+    margin-top: -1%;
+    font-size: small;
+}
+
+.container img{
+    width: 30px;
+    cursor: pointer;
+
+}
+
+.input {
+    width: 220px; /* Set the width to 220px */
+    background-color: #f5f5f5;
+    color: #1c1717;
+    padding: .15rem 5.5rem .0rem 1.1rem ;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+    margin:5.2ch 0ch 2ch;
+    max-width: fit-content;
+}
+  
+  input:focus {
+    border-bottom: 3px solid #DF826C;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+    outline: 1px solid lightgrey;
+  }
+
+ /* Button */
+ button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #DF826C;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 12px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 18px 20px 2px 1px;
+   }
+   
+   button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   button:hover span {
+    padding-right: 15px;
+   }
+   
+   button:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
